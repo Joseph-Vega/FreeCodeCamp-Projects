@@ -1,0 +1,17 @@
+body {
+    background-color: #009688;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#temperature {
+    margin-top: 15px;
+}
+#weather-icon {
+    margin-bottom: -13px;
+}
+#convertTemperature {
+    margin-top: 25px;
+}

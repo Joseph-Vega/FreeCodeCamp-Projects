@@ -1,0 +1,105 @@
+:root {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Share Tech Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-size: 3rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+#root {
+  align-items: center;
+  background-color: #39cccc;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+#main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#timer-container {
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  justify-content: center;
+  width: 25rem;
+}
+
+#timer-label {
+  font-size: 4rem;
+}
+
+#time-left {
+  font-size: 5rem;
+}
+
+#mode-controls-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.button-container {
+  align-items: center;
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+}
+
+.button-container span {
+  width: 5rem;
+}
+
+#start-stop-reset-container {
+  display: flex;
+  justify-content: center;
+}
+
+#start_stop {
+  margin-right: 5.5rem;
+}
+
+@media screen and (min-width: 30rem) {
+  #mode-controls-container {
+    flex-direction: row;
+  }
+
+  #mode-controls-container .mode-length-container:first-child {
+    margin-right: 3rem;
+  }
+}

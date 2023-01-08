@@ -1,0 +1,40 @@
+body {
+  background-color: #eee;
+}
+.card-panel {
+  margin-top: 50px;
+  padding-bottom: 3px;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+#channels {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.channelName a {
+  color: #000;
+  text-decoration: underline;
+}
+.channelLogo img {
+  max-width: 75px;
+  max-height: 75px;
+  border: 1px solid;
+  margin-top: 7px;
+}
+.online {
+  background-color: #c8e6c9;
+}
+.offline {
+  background-color: #e0e0e0;
+}
+.tabs .tab a {
+  color: #7e57c2;
+}
+.tabs .tab a:hover {
+  color: #d1c4e9;
+}
+.tabs .indicator {
+  background-color: #7e57c2;
+}

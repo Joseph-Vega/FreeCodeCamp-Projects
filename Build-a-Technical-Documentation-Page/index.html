@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FreeCodeCamp: Build a Technical Documentation Page</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id="page-wrapper">
+  <nav id="navbar">
+    <header>
+      <h1 id="menu-header">Mithril JS</h1>
+    </header>
+    <ul id="nav-link-list">
+      <li>
+        <a class="nav-link" href="#What_is_Mithril?">What is Mithril?</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Getting_Started">Getting Started</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Hello_World">Hello World</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#DOM_Elements">DOM Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Components">Components</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Examples">Examples</a>
+      </li>
+
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="What_is_Mithril?">
+      <header>
+        <h2 class="section-header">What is Mithril?</h2>
+      </header>
+      <p>Mithril is a modern client-side JavaScript framework for building Single Page Applications. It's small (< 10kb gzip), fast and provides routing and XHR utilities out of the box.</p>
+          <p>Mithril is used by companies like Vimeo and Nike, and open source platforms like Lichess.</p>
+          <p>Mithril supports IE11, Firefox ESR, and the last two versions of Firefox, Edge, Safari, and Chrome. No polyfills required.</p>
+    </section>
+    <section class="main-section" id="Getting_Started">
+      <header>
+        <h2 class="section-header">Getting Started</h2>
+      </header>
+      <p>An easy way to try out Mithril is to include it from a CDN and follow this tutorial. It'll cover the majority of the API surface (including routing and XHR) but it'll only take 10 minutes.</p>
+      <p>Let's create an HTML file to follow along:</p>
+      <pre class="code-block"><code class="language-html"><!--<body>
+  <script src="https://unpkg.com/mithril/mithril.js"></script>
+  <script>
+    var root = document.body
+    // your code goes here!
+  </script>
+</body>--></code></pre>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header>
+        <h2 class="section-header">Hello World</h2>
+      </header>
+      <p>Let's start as small as we can: render some text on screen. Copy the code below into your file:</p>
+      <pre class="code-block"><code class="language-js"><!--var root = document.body;
+m.render(root, "Hello world"); --></code></pre>
+      <p>Now, let's change the text to something else. Add this line of code under the previous one:</p>
+      <pre class="code-block"><code class="language-js"><!--m.render(root, "My first app");--></code></pre>
+    </section>
+    <section class="main-section" id="DOM_Elements">
+      <header>
+        <h2 class="section-header">DOM Elements</h2>
+      </header>
+      <p>Let's wrap our text in an <code class="language-html"><!--<h1>--></code> tag:</p>
+      <pre class="code-block"><code class="language-js"><!--m.render(root, m("h1", "My first app"));--></code></pre>
+      <p>The <code class="language-js"><!--m()--></code> function can be used to describe any HTML structure you want. So if you need to add a class to the <code class="language-html"><!--<h1>--></code>:</p>
+      <pre class="code-block"><code class="language-js"><!--m("h1", {class: "title"}, "My first app");--></code></pre>
+      <p>If you want to have multiple elements:</p>
+      <pre class="code-block"><code class="language-js"><!--[
+    m("h1", {class: "title"}, "My first app"),
+    m("button", "A button"),
+];--></code></pre>
+      <p>And so on:</p>
+      <pre class="code-block"><code class="language-js"><!--m("main", [
+    m("h1", {class: "title"}, "My first app"),
+    m("button", "A button"),
+]);--></code></pre>
+    </section>
+    <section class="main-section" id="Components">
+      <header>
+        <h2 class="section-header">Components</h2>
+      </header>
+      <p>A Mithril component is just an object with a <code class="language-js">view</code> function. Here's the code above as a component:</p>
+      <pre class="code-block"><code class="language-js"><!--var Hello = {
+    view: function() {
+        return m("main", [
+            m("h1", {class: "title"}, "My first app"),
+            m("button", "A button"),
+        ]);
+    }
+};--></code></pre>
+
+      <p>To activate the component, we use <code class="language-js">m.mount</code>.</p>
+      <pre class="code-block"><code class="language-js"><!--m.mount(root, Hello);--></code></pre>
+
+      <p>As you would expect, doing so creates this markup:</p>
+      <pre class="code-block"><code class="language-html"><!--<main>
+    <h1 class="title">My first app</h1>
+    <button>A button</button>
+</main>--></code></pre>
+      <p>The <code class="language-js">m.mount</code> function is similar to <code class="language-js">m.render</code>, but instead of rendering some HTML only once, it activates Mithril's auto-redrawing system. To understand what that means, let's add some events:</p>
+      <pre class="code-block"><code class="language-js"><!--var count = 0; // added a variable
+
+var Hello = {
+    view: function() {
+        return m("main", [
+            m("h1", {class: "title"}, "My first app"),
+            // changed the next line
+            m("button", {onclick: function() {count++}}, count + " clicks"),
+        ]);
+    }
+};
+
+m.mount(root, Hello)--></code></pre>
+      <p>We defined an <code class="language-js">onclick</code> event on the button, which increments a variable <code class="language-js">count</code> (which was declared at the top). We are now also rendering the value of that variable in the button label.</p>
+      <p>You can now update the label of the button by clicking the button. Since we used <code class="language-js">m.mount</code>, you don't need to manually call <code class="language-js">m.render</code> to apply the changes in the <code class="language-js">count</code> variable to the HTML; Mithril does it for you.</p>
+      <p></p>
+    </section>
+    <section class="main-section" id="Examples">
+      <header>
+        <h2 class="section-header">Examples</h2>
+      </header>
+      <ul>
+        <li class="example-li">
+          <a href="https://raw.githack.com/MithrilJS/mithril.js/master/examples/animation/mosaic.html">Animation</a>
+        </li>
+        <li class="example-li">
+          <a href="https://how-to-mithril.js.org/">Community Added Examples</a>
+        </li>
+        <li class="example-li">
+          <a href="https://raw.githack.com/MithrilJS/mithril.js/master/examples/dbmonster/mithril/index.html">DBMonster</a>
+        </li>
+        <li class="example-li">
+          <a href="https://raw.githack.com/MithrilJS/mithril.js/master/examples/editor/index.html">Markdown Editor</a>
+        </li>
+        <li class="example-li">
+          <a href="https://raw.githack.com/MithrilJS/mithril.js/master/examples/todomvc/index.html">TodoMVC</a>
+        </li>
+      </ul>
+      </header>
+    </section>
+  </main>
+</div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/unescaped-markup/prism-unescaped-markup.min.js'></script>
+</body>
+</html>

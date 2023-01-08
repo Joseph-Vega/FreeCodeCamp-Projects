@@ -1,0 +1,81 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+body {
+  background-color: #808080;
+  font-family: "Share Tech Mono";
+}
+#calculator {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #424242;
+  border-radius: 25px;
+  box-shadow: 7px 10px 20px 1px rgba(0,0,0,0.8);
+}
+#logo {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+#display {
+  background-color: #c8e6c9;
+  height: 75px;
+  margin: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px inset #000;
+  text-align: right;
+}
+#entry {
+  margin-right: 5px;
+  font-size: 65px;
+  letter-spacing: -10px;
+  color: #37474f;
+  position: absolute;
+  top: 47px;
+  right: 24.4px;
+}
+#row-1-buttons,
+#row-2-buttons,
+#row-3-buttons,
+#row-4-buttons,
+#row-5-buttons {
+  margin-left: 10px;
+}
+#row-2-buttons,
+#row-3-buttons,
+#row-4-buttons,
+#row-5-buttons {
+  margin-top: 10px;
+}
+.btn {
+  margin-left: 10px;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn-standard {
+  width: 58px;
+  height: 40px;
+}
+.btn-equals {
+  width: 58px;
+  height: 90px;
+  position: absolute;
+  top: 292px;
+  right: 18px;
+}
+.btn-zero {
+  width: 124px;
+  height: 40px;
+}
+.clear-btn {
+  color: #fff;
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}

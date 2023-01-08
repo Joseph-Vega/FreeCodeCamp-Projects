@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FreeCodeCamp: Build a Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="container">
+  <h1 id="title" class="text-center">The Soap Factory: Survey Form</h1>
+  <p id="description" class="text-center">Thank you for taking the time to help us improve our business</p>
+  <form id="survey-form">
+
+    <div class="form-group">
+      <label for="name" id="name-label" class="input-box-label">Name</label>
+      <input name="name" id="name" class="form-control" type="text" required placeholder="Enter your name" />
+    </div>
+
+    <div class="form-group">
+      <label for="email" id="email-label" class="input-box-label">Email</label>
+      <input name="email" id="email" class="form-control" type="email" required placeholder="Enter your email" />
+    </div>
+
+    <div class="form-group">
+      <label for="number" id="number-label" class="input-box-label">Age</label>
+      <input name="number" id="number" class="form-control" type="number" min="10" max="120" required placeholder="Enter your age" />
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown" id="dropdown-label" class="input-box-label">How would you rate your experience?</label>
+      <select name="dropdown" id="dropdown" class="form-control">
+        <option disabled selected value>Select an option...</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="okay">Okay</option>
+        <option value="bad">Bad</option>
+        <option value="terrible">Terrible</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Did you order online or in-store?</p>
+      <div class="radio-group">
+        <input type="radio" id="online" class="input-radio" name="ordertype" value="online">
+        <label for="online">Online</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="instore" class="input-radio" name="ordertype" value="instore">
+        <label for="instore">In-store</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <p>What items did you order?</p>
+      <div class="checkbox-group">
+        <input type="checkbox" id="barsoap" name="barsoap" value="barsoap">
+        <label for="barsoap">Bar Soap</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="liquidsoap" name="liquidsoap" value="liquidsoap">
+        <label for="liquidsoap">Liquid Soap</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="lotion" name="lotion" value="lotion">
+        <label for="lotion">Lotion</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="sheabutter" name="sheabutter" value="sheabutter">
+        <label for="sheabutter">Shea Butter</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="form-textarea" class="input-box-label">Any comments or suggestions?</label>
+      <textarea name="form-textarea" id="form-textarea" class="form-textarea" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+
+  </form>
+</div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>

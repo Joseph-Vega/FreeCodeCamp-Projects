@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            FCC: Tic Tac Toe
+        </title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet prefetch'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css' rel='stylesheet prefetch'>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+              <h1 class="center-align">Tic Tac Toe</h1>
+              <div id="game-board">
+                <div data-value="0" class="square"></div>
+                <div data-value="1" class="square"></div>
+                <div data-value="2" class="square"></div>
+                <div data-value="3" class="square"></div>
+                <div data-value="4" class="square"></div>
+                <div data-value="5" class="square"></div>
+                <div data-value="6" class="square"></div>
+                <div data-value="7" class="square"></div>
+                <div data-value="8" class="square"></div>
+              </div>
+              <div id="control-board">
+                <h3 id="turn-indicator" class="hide"></h3>
+                <h4 class="center-align">Choose</h4>
+                <div id="control-buttons"><a id="x-button" class="icon-button btn blue"><i class="fa fa-times"></i></a><a id="first-button" class="turn-order-button btn green hide">First</a><a id="o-button" class="icon-button btn right-side orange"><i class="fa fa-circle-o"></i></a><a id="last-button" class="turn-order-button btn red right-side hide">Last</a></div>
+              </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'>
+        </script> 
+        <script src="js/app.js">
+        </script>
+    </body>
+</html>

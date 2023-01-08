@@ -1,0 +1,21 @@
+#appTitle
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.article
+{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	color: black;
+}
+.card-panel
+{
+	padding-bottom: 10px;
+	border-left: 5px solid #26a69a;
+}
+input[type=search]
+{
+	border-bottom: 1px solid #26a69a;
+}

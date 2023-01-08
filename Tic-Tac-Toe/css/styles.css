@@ -1,0 +1,74 @@
+#game-board {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    color: #fff;
+    background-color: gray;
+    height: 140px;
+    width: 140px;
+    float: left;
+    margin: 13px;
+    cursor: pointer;
+}
+
+.square.fa-times {
+    background-color: #2196f3;
+    font-size: 175px;
+    line-height: 130px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.square.fa-circle-o {
+    background-color: #ff9800;
+    font-size: 140px;
+    line-height: 140px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+#control-board {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    width: 500px;
+}
+
+#control-board h4 {
+    margin-bottom: 30px;
+}
+
+#control-buttons .btn {
+    width: 200px;
+}
+
+#control-buttons .right-side {
+    float: right;
+}
+
+#turn-indicator {
+    text-align: center;
+}
+
+.low-opacity {
+    opacity: .2;
+}
+
+@media screen and (max-width: 500px)
+{
+	.wrapper {
+		transform: scale(0.59)	
+		transform-origin: 0 0;
+    }
+    
+	.wrapper h1 {
+	    display: none
+	}
+}

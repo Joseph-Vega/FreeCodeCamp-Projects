@@ -1,0 +1,118 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+      115deg,
+      rgb(95 95 95 / 80%),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://i.imgur.com/1G30UqU.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  background-color: rgb(53 25 61 / 90%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  margin: 50px auto 50px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+#title {
+  padding-top: 40px;
+}
+
+p {
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+
+#description {
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#survey-form {
+  padding: 20px 40px;
+}
+
+.form-group {
+  margin: 0 auto 12px auto;
+}
+
+.form-control {
+  height: auto;
+  padding: 4px 8px;
+  width: 100%;
+}
+
+.radio-group,
+.checkbox-group {
+  padding: 5px;
+}
+
+label {
+  font-size: 1.75rem;
+}
+
+.input-box-label {
+  display: block;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+input {
+  font-size: 2rem;
+}
+
+select.form-control {
+  font-size: 2rem;
+  height: auto;
+}
+
+.form-textarea {
+  min-height: 12rem;
+  padding: 10px;
+  width: 100%;
+}
+
+#submit {
+  background-color: #37af65;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2rem;
+  margin-top: 40px;
+  padding: 10px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}

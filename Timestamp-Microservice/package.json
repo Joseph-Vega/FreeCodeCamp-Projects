@@ -1,0 +1,13 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "moment": "^2.14.1"
+  },
+  "author": "Joseph Vega",
+  "license": "ISC"
+}

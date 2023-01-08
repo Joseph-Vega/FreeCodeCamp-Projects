@@ -1,0 +1,258 @@
+:root {
+  --base-color: #008fb3;
+  --highlight-color: #00b8e6;
+  --shadow-color: #006680;
+  font-size: 62.5%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 3rem;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--base-color);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--base-color);
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 7.5rem;
+    min-height: 7.5rem;
+    padding-bottom: 0;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  display: flex;
+  padding: 0.5rem 1.5rem;
+}
+
+#logo {
+  flex-basis: 75%;
+}
+
+#nav-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+}
+
+@media (min-width: 600px) {
+  #nav-bar {
+    flex-direction: row;
+    margin-left: 4rem;
+  }
+}
+
+#nav-group {
+  display: flex;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+#nav-group a:hover {
+  background-color: var(--shadow-color);
+}
+
+@media (min-width: 600px) {
+  #nav-group a {
+    padding: 2.7rem 1.5rem;
+  }
+}
+
+#hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 15rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #hero {
+    margin-top: 12rem;
+  }
+}
+
+#hero h2 {
+  padding: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero input[type="email"] {
+  padding: 0.5rem;
+}
+
+#hero input[type="submit"] {
+  margin: 2rem 0;
+  width: 20rem;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.feature-blurb {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.feature-description {
+  text-align: justify;
+}
+
+.feature-icon {
+  font-size: 5rem;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 5rem 4rem 5rem;
+}
+
+#video {
+  max-width: 50.6rem;
+  width: 100%;
+}
+
+#pricing {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 900px) {
+  #pricing {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+}
+
+.product {
+  align-items: center;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%),
+    0 2px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  text-align: center;
+  width: 30rem;
+}
+
+@media (min-width: 900px) {
+  .product {
+    margin: 3rem 3rem 0rem 3rem;
+  }
+}
+
+.product-header {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 2rem;
+  width: 100%;
+}
+
+.product-body {
+  padding: 1rem;
+}
+
+.product-price {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.product li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.buy-button {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  width: 10rem;
+}
+
+#footer {
+  display: flex;
+  background-color: var(--base-color);
+  justify-content: center;
+  padding: 2rem;
+}
+
+#footer-links a:hover {
+  background-color: var(--shadow-color);
+}
+
+.footer-link {
+  color: #fff;
+  padding: 2rem 1.5rem;
+}

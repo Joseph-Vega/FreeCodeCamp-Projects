@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+  <head>
+	<meta charset="UTF-8">
+	<title>Local Weather</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=""stylesheet"" href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m8 l6 offset-m2 offset-l3">
+					<div class="card-panel center-align">
+						<div id="location" class="flow-text">Orlando, US</div>
+						<div id="temperature" class="flow-text"><span id="tempNum">34</span><span id="tempUnit">°C</span></div>
+						<div id="weather-icon"><img src="http://openweathermap.org/img/w/01d.png" alt="Weather icon" height="75" width="75" /></div>
+						<div id="weather-description" class="flow-text">Sunny</div>
+						<a id="convertTemperature" class="btn blue">Change to °F</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/app.js"></script>   
+  </body>
+</html>

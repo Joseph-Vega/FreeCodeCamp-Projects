@@ -1,0 +1,126 @@
+:root {
+  --base-color: #008fb3;
+  --highlight-color: #00b8e6;
+  --shadow-color: #006680;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  padding-bottom: 1rem;
+}
+
+#navbar {
+  background-color: var(--base-color);
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#menu-header {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 2rem;
+}
+
+pre.code-block {
+  margin-bottom: 2rem;
+}
+
+#nav-link-list {
+  overflow: auto;
+}
+
+#nav-link-list li {
+  border-top: 1px solid #efefef;
+  padding: 0.5rem;
+}
+
+#nav-link-list li:last-child {
+  border-bottom: 1px solid #efefef;
+}
+
+#nav-link-list li:hover {
+  background-color: var(--shadow-color);
+}
+
+#main-doc {
+  padding: 2rem;
+}
+
+.section-header,
+.section-sub-header {
+  margin-bottom: 2rem;
+}
+
+.example-li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+  #menu-header {
+    margin-bottom: 1rem;
+  }
+
+  #page-wrapper {
+    flex-direction: row;
+  }
+  #navbar {
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    min-height: 100%;
+    min-width: 30rem;
+    width: 30rem;
+  }
+
+  #nav-link-list li {
+    padding: 1rem;
+  }
+  #main-doc {
+    margin: 0;
+    padding: 2rem 5rem 3rem 3rem;
+    overflow: auto;
+  }
+}
